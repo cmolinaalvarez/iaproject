@@ -1,0 +1,35 @@
+datos iniciales base de datos
+INSERT INTO biometric_subjects (subject_id, full_name) VALUES 
+('Carlos_Molina', 'Carlos Molina'),
+('Ana_Gomez', 'Ana Gómez'),
+('Andres_Restrepo', 'Andrés Restrepo'),
+('Luisa_Perez', 'Luisa Pérez'),
+('Mateo_Silva', 'Mateo Silva'),
+('Sofia_Torres', 'Sofía Torres'),
+('David_Vargas', 'David Vargas'),
+('Valeria_Castro', 'Valeria Castro'),
+('Juan_Morales', 'Juan Morales'),
+('Camila_Rojas', 'Camila Rojas')
+ON CONFLICT (subject_id) DO NOTHING;
+
+INSERT INTO biometric_samples (subject_id, feature_vector)
+SELECT 
+    CASE (i % 10)
+        WHEN 0 THEN 'Carlos_Molina'
+        WHEN 1 THEN 'Ana_Gomez'
+        WHEN 2 THEN 'Andres_Restrepo'
+        WHEN 3 THEN 'Luisa_Perez'
+        WHEN 4 THEN 'Mateo_Silva'
+        WHEN 5 THEN 'Sofia_Torres'
+        WHEN 6 THEN 'David_Vargas'
+        WHEN 7 THEN 'Valeria_Castro'
+        WHEN 8 THEN 'Juan_Morales'
+        ELSE 'Camila_Rojas'
+    END AS subject_id,
+    
+    json_build_object(
+        'area_tinta', round((10000 + random() * 8000)::numeric, 2),
+        'aspect_ratio', round((1.5 + random() * 1.0)::numeric, 4),
+        'inclinacion', round((-10 + random() * 20)::numeric, 2)
+    )::jsonb AS feature_vector
+FROM generate_series(1, 2000000) AS i;

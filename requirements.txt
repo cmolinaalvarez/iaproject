@@ -1,0 +1,12 @@
+streamlit
+opencv-python-headless
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+requests
+Pillow
+psycopg2-binary
+google-genai>=1.0,<2
+python-dotenv>=1.0,<2

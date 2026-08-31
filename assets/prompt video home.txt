@@ -1,0 +1,25 @@
+Actúa como director de producción audiovisual y experto en IA. Genera un video comercial y demostrativo de 35 a 45 segundos para la presentación oficial del proyecto "GraphoID AI". 
+
+Configuración de la escena:
+
+- Formato: Diálogo dinámico / Presentación a dos voces (simulando a los dos responsables del proyecto: Samuel Peña y Carlos Molina.
+
+- Tono: Profesional, innovador, seguro y dinámico.
+
+Guion exacto para la locución del video:
+
+[Voz 1 - Samuel Peña]: 
+
+"¡Hola a todos! Bienvenidos a la presentación de GraphoID AI. Soy [Nombre del Samuel Peña], y junto a mi compañero Carlos Molina..."
+
+[Voz 2 - Carlos Molina]: 
+
+"...hemos desarrollado una solución web integral en Streamlit para la validación inteligente de manuscritos y firmas, aplicando visión por computadora y Machine Learning."
+
+[Voz 1 - Samuel Peña]: 
+
+"Nuestra plataforma permite gestionar millones de registros históricos, enrolar muestras reales de nuestros compañeros de clase y validar en tiempo real si un trazo pertenece a un usuario o si es un manuscrito no registrado."
+
+[Voz 2 - Carlos Molina]: 
+
+"Además, todo está conectado a un sistema de auditoría automatizada con n8n. Los invitamos a conocer nuestra plataforma y descubrir el poder de la IA aplicada a la biometría caligráfica. ¡Muchas gracias!"
